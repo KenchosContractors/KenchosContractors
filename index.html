@@ -139,6 +139,23 @@ font-size: 2.4rem;
 
 .tagline {
 font-size: 1.2rem;
+  .cta-button {
+display: inline-block;
+background: #ff7a00;
+color: black;
+text-decoration: none;
+padding: 1rem 2rem;
+border-radius: 6px;
+font-weight: bold;
+margin-bottom: 2rem;
+transition: 0.3s;
+}
+
+.cta-button:hover {
+background: #ff9500;
+transform: translateY(-2px);
+}
+
 }
 }
 </style>
@@ -157,7 +174,9 @@ Built by experience. Backed by family values.
 <div class="under-construction">
 🚧 WEBSITE UNDER CONSTRUCTION 🚧
 </div>
-
+<a href="#contact" class="cta-button">
+Request a Free Estimate
+</a>
 <p class="hero-message">
 We're currently building our new website. Check back soon for project galleries,
 service information, and contact options.
@@ -228,6 +247,65 @@ function, and curb appeal.
 
 </div>
 </section>
+<section id="contact" class="contact">
+<h2>Free Estimates</h2>
 
+<p class="contact-intro">
+Ready to start your next outdoor project?
+Contact Kenchos Contractors today for a free estimate.
+</p>
+
+<div class="contact-card">
+<p><strong>Phone:</strong></p>
+<p>
+<a href="tel:2407296197">(240) 729-6197</a>
+</p>
+
+<br>
+
+<p><strong>Email:</strong></p>
+<p>
+<a href="mailto:Kenchos.contractors@gmail.com">
+Kenchos.contractors@gmail.com
+</a>
+</p>
+</div>
+</section>
 </body>
 </html>
+.contact {
+background: #111;
+text-align: center;
+padding: 5rem 2rem;
+}
+
+.contact h2 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.contact-intro {
+max-width: 700px;
+margin: 0 auto 2rem;
+color: #ddd;
+}
+
+.contact-card {
+max-width: 500px;
+margin: 0 auto;
+background: #222;
+padding: 2rem;
+border-radius: 10px;
+border-top: 4px solid #ff7a00;
+}
+
+.contact-card a {
+color: #ff7a00;
+text-decoration: none;
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.contact-card a:hover {
+text-decoration: underline;
+}
