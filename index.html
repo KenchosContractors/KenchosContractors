@@ -21,7 +21,7 @@ color: white;
 .hero {
 min-height: 100vh;
 background:
-linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.80)),
+linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
 url("construction-banner.jpg");
 background-size: cover;
 background-position: center;
@@ -32,8 +32,8 @@ text-align: center;
 padding: 2rem;
 }
 
-.content {
-max-width: 800px;
+.hero-content {
+max-width: 900px;
 }
 
 h1 {
@@ -48,7 +48,7 @@ margin-bottom: 2rem;
 font-weight: bold;
 }
 
-.construction {
+.under-construction {
 display: inline-block;
 background: #ff7a00;
 color: black;
@@ -59,40 +59,175 @@ font-size: 1.2rem;
 margin-bottom: 2rem;
 }
 
-.message {
+.hero-message {
 font-size: 1.1rem;
 line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-h1 {
+.services {
+background: #161616;
+padding: 5rem 2rem;
+text-align: center;
+}
+
+.services h2 {
 font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.services-intro {
+color: #ddd;
+max-width: 700px;
+margin: 0 auto 1rem;
+font-size: 1.1rem;
+line-height: 1.6;
+}
+
+.trust-line {
+color: #ff7a00;
+font-weight: bold;
+margin-bottom: 3rem;
+font-size: 1.1rem;
+}
+
+.service-grid {
+max-width: 1100px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+}
+
+.service-card {
+background: #222;
+border: 1px solid #333;
+border-top: 4px solid #ff7a00;
+padding: 2rem;
+border-radius: 10px;
+text-align: left;
+}
+
+.service-card h3 {
+color: #ff7a00;
+margin-bottom: 1rem;
+font-size: 1.4rem;
+}
+
+.service-card p {
+color: #ddd;
+line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+.service-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+h1 {
+font-size: 3rem;
+}
+}
+
+@media (max-width: 600px) {
+.service-grid {
+grid-template-columns: 1fr;
+}
+
+h1 {
+font-size: 2.4rem;
+}
+
+.tagline {
+font-size: 1.2rem;
 }
 }
 </style>
 </head>
+
 <body>
 
 <section class="hero">
-<div class="content">
+<div class="hero-content">
 <h1>Kenchos Contractors</h1>
 
 <div class="tagline">
 Built by experience. Backed by family values.
 </div>
 
-<div class="construction">
+<div class="under-construction">
 🚧 WEBSITE UNDER CONSTRUCTION 🚧
 </div>
 
-<p class="message">
-We're currently building our new website.
-Check back soon for project galleries,
-service information.
- <a href="mailto:kenchos.contractors@gmail.com">
-Request a Free Estimate </a> 
+<p class="hero-message">
+We're currently building our new website. Check back soon for project galleries,
+service information, and contact options.
 </p>
 </div>
 </section>
+
+<section class="services">
+<h2>Services We Offer</h2>
+
+<p class="services-intro">
+Quality outdoor construction and renovation services built to last.
+</p>
+
+<div class="trust-line">
+Licensed • Experienced • Insured • Family Owned
+</div>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Deck Demolition</h3>
+<p>
+Safe removal of aging, damaged, or unwanted decks with careful cleanup
+and preparation for your next project.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Deck Construction</h3>
+<p>
+New deck builds designed for outdoor living, durability, and everyday use
+with clean, reliable craftsmanship.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Outdoor Stairs</h3>
+<p>
+Stair construction, replacement, and repairs for decks, porches,
+entrances, and outdoor spaces.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Porches</h3>
+<p>
+Front and rear porch builds, updates, repairs, and structural improvements
+to make your outdoor space safer and more inviting.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Gazebos</h3>
+<p>
+Custom gazebo construction for backyards, patios, gathering spaces,
+and outdoor relaxation.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Railings</h3>
+<p>
+Deck and stair railing installation, replacement, and upgrades for safety,
+function, and curb appeal.
+</p>
+</div>
+
+</div>
+</section>
+
 </body>
 </html>
